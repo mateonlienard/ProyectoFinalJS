@@ -63,7 +63,7 @@ footer .contactos, footer h6, footer h2, footer .acompañante-map, footer .map, 
   grid-template-areas: "tv1 tv2" "tv3 tv4";
 }
 .main-container img {
-  width: 500px;
+  width: 400px;
 }
 .main-container .auri1, .main-container .auri2, .main-container .auri3, .main-container .auri4, .main-container .auri5, .main-container .auri6 {
   width: 300px;
@@ -107,7 +107,7 @@ footer .contactos, footer h6, footer h2, footer .acompañante-map, footer .map, 
 .main-container2 {
   justify-content: space-around;
   background-color: rgb(45, 1, 86);
-  margin: 40px;
+  padding: 40px;
 }
 .main-container2 h2 {
   font-family: "Verdana";

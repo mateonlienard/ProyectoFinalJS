@@ -35,7 +35,7 @@
         'tv3 tv4';
     }
     img{
-        width: 500px;
+        width: 400px;
     }
     .auri1, .auri2, .auri3, .auri4, .auri5, .auri6{
         width: 300px; 
@@ -88,7 +88,7 @@
     @extend %displayF;
     justify-content: map-get($lugar, around);
     background-color: nth($colores, 2);
-    margin: nth($pixeles, 1);
+    padding: nth($pixeles, 1);
     h2{
         @extend %displayF;
         font-family: nth($fuentes, 2);
