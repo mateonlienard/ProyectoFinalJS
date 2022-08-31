@@ -1,0 +1,27 @@
+@import '../base/listas';
+@import '../base/mixins';
+@import '../base/extend';
+@import '../base/maps';
+
+header{
+    @extend %displayF;
+    background-color: nth($colores, 1);
+    color: nth($colores, 3);
+    justify-content: map-get($lugar, around);
+    .icono{
+        @extend %displayF;
+        justify-content: map-get($lugar, start);
+        transition: all 2s;
+    }
+    .icono:hover{
+        @include escala;
+    }
+    .bienvenida{
+        @extend %displayF;
+        align-items: map-get($lugar, centro);
+    }
+    .carrito{
+        @extend %displayF;
+        justify-content: map-get($lugar, end);
+    }
+}

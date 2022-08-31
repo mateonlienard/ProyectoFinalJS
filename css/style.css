@@ -1,0 +1,488 @@
+@charset "UTF-8";
+footer .contactos, footer h6, footer h2, footer .acompañante-map, footer .map, .main-container2 h2, .main-container2, .main-container h4, .main-container p, .main-container .tv1, .main-container .tv2, .main-container .tv3, .main-container .tv4, .main-container .tv5, .main-container .tv6, .main-container, .lugar-tabla .tabla, header .carrito, header .bienvenida, header .icono, header {
+  display: flex;
+}
+
+.section-contactos, .main-container .maintv, .main-container .main {
+  display: grid;
+}
+
+header {
+  background-color: rgb(117, 117, 216);
+  color: white;
+  justify-content: space-around;
+}
+header .icono {
+  justify-content: flex-start;
+  transition: all 2s;
+}
+header .icono:hover {
+  transform: scale(1.1);
+}
+header .bienvenida {
+  align-items: center;
+}
+header .carrito {
+  justify-content: flex-end;
+}
+
+footer .contactos, footer h6, footer h2, footer .acompañante-map, footer .map, .main-container2 h2, .main-container2, .main-container h4, .main-container p, .main-container .tv1, .main-container .tv2, .main-container .tv3, .main-container .tv4, .main-container .tv5, .main-container .tv6, .main-container, .lugar-tabla .tabla, header, header .icono, header .bienvenida, header .carrito {
+  display: flex;
+}
+
+.section-contactos, .main-container .maintv, .main-container .main {
+  display: grid;
+}
+
+.lugar-tabla {
+  background-color: rgb(117, 117, 216);
+  align-items: center;
+  color: white;
+}
+.lugar-tabla .tabla {
+  border-top: 1px solid rgb(255, 255, 255);
+  padding: 5px;
+  justify-content: space-around;
+  color: white;
+}
+.lugar-tabla .tabla a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Calibri";
+  transition: all 1s;
+}
+.lugar-tabla .tabla a:hover {
+  transform: scale(1.1);
+}
+
+.main-container {
+  justify-content: space-around;
+}
+.main-container .main {
+  grid-template-areas: "tv1 tv2" "tv3 tv4";
+}
+.main-container img {
+  width: 500px;
+}
+.main-container .auri1, .main-container .auri2, .main-container .auri3, .main-container .auri4, .main-container .auri5, .main-container .auri6 {
+  width: 300px;
+}
+.main-container .moni1, .main-container .moni2, .main-container .moni3, .main-container .moni4, .main-container .moni5, .main-container .moni6 {
+  width: 400px;
+}
+.main-container .maintv {
+  grid-template-areas: "tv1 tv2" "tv3 tv4" "tv5 tv6";
+}
+.main-container .tv1, .main-container .tv2, .main-container .tv3, .main-container .tv4, .main-container .tv5, .main-container .tv6 {
+  justify-content: space-around;
+  align-items: center;
+}
+.main-container p {
+  font-family: "Verdana";
+  color: white;
+  justify-content: space-around;
+}
+.main-container h4 {
+  justify-content: center;
+}
+
+.tabla {
+  --bs-table-color: var(--bs-body-color);
+  --bs-table-bg: transparent;
+  --bs-table-border-color: var(--bs-border-color);
+  --bs-table-accent-bg: transparent;
+  --bs-table-striped-color: var(--bs-body-color);
+  --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+  --bs-table-active-color: var(--bs-body-color);
+  --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+  --bs-table-hover-color: var(--bs-body-color);
+  --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+  width: 100%;
+  color: var(--bs-table-color);
+  vertical-align: top;
+  border-color: var(--bs-table-border-color);
+}
+
+.main-container2 {
+  justify-content: space-around;
+  background-color: rgb(45, 1, 86);
+  margin: 40px;
+}
+.main-container2 h2 {
+  font-family: "Verdana";
+  color: white;
+  align-items: center;
+}
+
+footer .contactos, footer h6, footer h2, footer .acompañante-map, footer .map, header, header .icono, header .bienvenida, header .carrito, .lugar-tabla .tabla, .main-container, .main-container .tv1, .main-container .tv2, .main-container .tv3, .main-container .tv4, .main-container .tv5, .main-container .tv6, .main-container p, .main-container h4, .main-container2, .main-container2 h2 {
+  display: flex;
+}
+
+.section-contactos, .main-container .main, .main-container .maintv {
+  display: grid;
+}
+
+footer {
+  background-color: rgb(117, 117, 216);
+  border-top: 1px solid white;
+}
+footer .map {
+  margin: 20px;
+  justify-content: space-around;
+}
+footer .acompañante-map {
+  justify-content: flex-end;
+  align-items: center;
+}
+footer h2 {
+  justify-content: center;
+  margin-bottom: 40px;
+}
+footer h6 {
+  justify-content: center;
+  margin-bottom: 40px;
+}
+footer .contactos-container {
+  padding-bottom: 20px;
+}
+footer .contactos {
+  justify-content: space-around;
+  align-items: center;
+}
+footer .contactos .contactosRS {
+  transition: all 2s;
+}
+footer .contactos .contactosRS:hover {
+  transform: scale(1.1);
+}
+
+header, header .icono, header .bienvenida, header .carrito, .lugar-tabla .tabla, .main-container, .main-container .tv1, .main-container .tv2, .main-container .tv3, .main-container .tv4, .main-container .tv5, .main-container .tv6, .main-container p, .main-container h4, .main-container2, .main-container2 h2, footer .map, footer .acompañante-map, footer h2, footer h6, footer .contactos {
+  display: flex;
+}
+
+.section-contactos, .main-container .main, .main-container .maintv {
+  display: grid;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+html {
+  font-family: "Calibri";
+  background-color: rgb(45, 1, 86);
+  color: white;
+}
+
+.section-contactos {
+  grid-template-areas: "aside1 formulario-container aside2";
+}
+.section-contactos .form {
+  width: 340px;
+  height: 440px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 30px #000;
+  margin: 40px auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+.section-contactos h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  color: gray;
+  border-bottom: 3px solid black;
+}
+.section-contactos input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s;
+  border-bottom: 2px solid grey;
+}
+.section-contactos input:focus {
+  border-bottom: 2px solid lightblue;
+}
+.section-contactos p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: gray;
+}
+.section-contactos button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid black;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.section-contactos button:hover {
+  background: gray;
+  color: white;
+}
+.section-contactos div {
+  position: absolute;
+  bottom: -15px;
+  right: -20px;
+  background: black;
+  color: white;
+  width: 320px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 10px 10px 40px -14px #000;
+}
+.section-contactos span {
+  margin: 0 5px 0 15px;
+}
+
+@media screen and (max-width: 899px) {
+  header {
+    background-color: rgb(117, 117, 216);
+    color: white;
+    justify-content: space-around;
+  }
+  header .icono {
+    justify-content: center;
+    height: 250px;
+    width: 300px;
+  }
+  header .bienvenida {
+    display: none;
+    order: 3;
+    align-items: center;
+  }
+  .lugar-tabla {
+    background-color: rgb(117, 117, 216);
+    align-items: center;
+    color: white;
+  }
+  .lugar-tabla .tabla {
+    border-top: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    justify-content: space-around;
+    color: white;
+  }
+  .lugar-tabla .tabla a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    font-family: "Calibri";
+    transition: all 1s;
+  }
+  .main-container {
+    justify-content: space-around;
+  }
+  .main-container .main {
+    grid-template-areas: "tv1" "tv2" "tv3" "tv4";
+  }
+  .main-container .maintv {
+    grid-template-areas: "tv1" "tv2" "tv3" "tv4" "tv5" "tv6";
+  }
+  .main-container .tv1, .main-container .tv2, .main-container .tv3, .main-container .tv4, .main-container .tv5, .main-container .tv6 {
+    justify-content: space-around;
+    align-items: center;
+  }
+  .main-container p {
+    font-family: "Verdana";
+    font-size: 10px;
+    color: white;
+    justify-content: space-around;
+  }
+  .main-container img {
+    width: 300px;
+  }
+  .main-container .mouseind {
+    width: 250px;
+  }
+  .main-container .auri1, .main-container .auri2, .main-container .auri3, .main-container .auri4, .main-container .auri5, .main-container .auri6 {
+    width: 200px;
+  }
+  .main-container .auri2, .main-container .auri5, .main-container .auri6 {
+    height: 250px;
+  }
+  .main-container .moni1, .main-container .moni2, .main-container .moni3, .main-container .moni4, .main-container .moni5, .main-container .moni6 {
+    width: 200px;
+  }
+  .main-container .mouse1, .main-container .mouse2, .main-container .mouse3, .main-container .mouse4, .main-container .mouse5, .main-container .mouse6 {
+    width: 150px;
+  }
+  .main-container2 {
+    display: none;
+    justify-content: space-around;
+    background-color: rgb(45, 1, 86);
+    margin: 40px;
+  }
+  .main-container2 h2 {
+    font-family: "Verdana";
+    color: white;
+    align-items: center;
+  }
+  footer {
+    background-color: rgb(117, 117, 216);
+    border-top: 1px solid white;
+  }
+  footer .map {
+    margin: 20px;
+    align-items: center;
+  }
+  footer .acompañante-map {
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  footer h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  footer h6 {
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  footer .contactos-container {
+    padding-bottom: 20px;
+  }
+  footer .contactos {
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer .contactos .contactosRS {
+    transition: all 2s;
+  }
+  footer .contactos .contactosRS:hover {
+    display: none;
+    transform: scale(1.1);
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  header {
+    display: flex;
+    background-color: rgb(117, 117, 216);
+    color: white;
+    justify-content: space-around;
+  }
+  header .icono {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    width: 300px;
+  }
+  header .bienvenida {
+    display: none;
+    display: flex;
+    order: 3;
+    align-items: center;
+  }
+  .lugar-tabla {
+    background-color: rgb(117, 117, 216);
+    align-items: center;
+    color: white;
+  }
+  .lugar-tabla .tabla {
+    display: flex;
+    border-top: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    justify-content: space-around;
+    color: white;
+  }
+  .lugar-tabla .tabla a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: "Calibri";
+    transition: all 1s;
+  }
+  .main-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .main-container .main {
+    display: grid;
+    grid-template-areas: "tv1" "tv2" "tv3" "tv4";
+  }
+  .main-container .maintv {
+    display: grid;
+    grid-template-areas: "tv1" "tv2" "tv3" "tv4" "tv5" "tv6";
+  }
+  .main-container .tv1, .main-container .tv2, .main-container .tv3, .main-container .tv4, .main-container .tv5, .main-container .tv6 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .main-container p {
+    display: flex;
+    font-family: "Verdana";
+    color: white;
+    justify-content: space-around;
+  }
+  .main-container2 {
+    display: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(45, 1, 86);
+    margin: 40px;
+  }
+  .main-container2 h2 {
+    display: flex;
+    font-family: "Verdana";
+    color: white;
+    align-items: center;
+  }
+  footer {
+    background-color: rgb(117, 117, 216);
+    border-top: 1px solid white;
+  }
+  footer .map {
+    display: flex;
+    margin: 20px;
+    align-items: center;
+  }
+  footer .acompañante-map {
+    display: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  footer h2 {
+    display: flex;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  footer h6 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  footer .contactos-container {
+    padding-bottom: 20px;
+  }
+  footer .contactos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer .contactos .contactosRS {
+    transition: all 2s;
+  }
+  footer .contactos .contactosRS:hover {
+    display: none;
+    transform: scale(1.1);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

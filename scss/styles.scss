@@ -1,0 +1,389 @@
+@import '../scss/components/header';
+@import '../scss/components/main';
+@import '../scss/components/footer';
+@import '../scss/base/extend';
+@import '../scss/base/listas';
+@import '../scss/base/maps';
+@import '../scss/base/mixins';
+
+*{
+    padding: 0%;
+    margin: 0%;
+    }
+html{
+        font-family: nth($fuentes, 1);
+        background-color: nth($colores, 2);
+        color: nth($colores, 3);
+    }
+
+
+// FORMULARIO - SECCION CONTACTOS
+.section-contactos{    
+    @extend %displayG;
+    grid-template-areas: 
+    'aside1 formulario-container aside2';
+    .form{
+        width: 340px;
+        height: 440px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 0 40px - 10px #000;
+        margin: 40px auto;
+        padding: 20px 30px;
+        max-width: calc(100vw - 40px);
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+        position: relative;
+    }
+    h2{
+        margin: 10px 0;
+        padding-bottom: 10px;
+        width: 180px;
+        color: gray;
+        border-bottom: 3px solid black;
+    }
+    input{
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        background: none;
+        outline: none;
+        resize: none;
+        border: 0;
+        font-family: "Montserrat", sans-serif;
+        transition: all .3s;
+        border-bottom: 2px solid grey;
+    }
+    input:focus{
+        border-bottom: 2px solid lightblue;
+    }
+
+    p:before{
+        content: attr(type);
+        display: block;
+        margin: 28px 0 0;
+        font-size: 14px;
+        color: gray;
+    }
+    button{
+        float: right;
+        padding: 8px 12px;
+        margin: 8px 0 0;
+        font-family: "Montserrat", sans-serif;
+        border: 2px solid black;
+        color: black;
+        cursor: pointer;
+        transition: all .3s;
+    }
+    button:hover{
+        background: gray;
+        color: white;
+    }
+    div{
+        position: absolute;
+        bottom: -15px;
+        right: -20px;
+        background: black;
+        color: white;
+        width: 320px;
+        padding: 16px 4px 16px 0;
+        border-radius: 6px;
+        font-size: 13px;
+        box-shadow: 10px 10px 40px -14px #000;
+    }
+    span{
+        margin: 0 5px 0 15px;
+    }
+}
+
+        // MEDIAS
+        @media screen and (max-width: 899px){
+
+            //SMALL
+                    // HEADER
+
+                    header{
+                        @extend %displayF;
+                        background-color: nth($colores, 1);
+                        color: nth($colores, 3);
+                        justify-content: map-get($lugar, around);
+                        .icono{
+                            @extend %displayF;
+                            justify-content: map-get($lugar, centro);
+                            height: 250px;
+                            width: 300px;
+                        }
+                        .bienvenida{
+                            display: none;
+                            @extend %displayF;
+                            order: 3;
+                            align-items: map-get($lugar, centro);
+                        }
+                    }
+
+                    // MAIN
+
+                    .lugar-tabla{
+                        background-color: nth($colores, 1);
+                        align-items: map-get($lugar, centro);
+                        color: nth($colores, 3);
+                        .tabla{
+                            @extend %displayF;
+                            border-top: 1px solid rgb(255, 255, 255);
+                            padding: nth($pixeles, 3);
+                            justify-content: map-get($lugar, around);
+                            color: nth($colores, 3);
+                            a{
+                                text-decoration: none;
+                                color: nth($colores, 3);
+                                font-size: 10px;
+                                font-family: nth($fuentes, 1);
+                                transition: all 1s;
+                            }
+                        }
+                    }
+                    .main-container{
+                        @extend %displayF;
+                        justify-content: map-get($lugar, around);
+                        .main{
+                            @extend %displayG;
+                            grid-template-areas: 
+                            'tv1'
+                            'tv2'
+                            'tv3'
+                            'tv4';
+                        }
+                        .maintv{
+                            @extend %displayG;
+                            grid-template-areas: 
+                            'tv1'
+                            'tv2'
+                            'tv3' 
+                            'tv4'
+                            'tv5' 
+                            'tv6';
+                        }
+                        .tv1, .tv2, .tv3, .tv4, .tv5, .tv6{
+                            @extend %displayF;
+                            justify-content: map-get($lugar, around);
+                            align-items: map-get($lugar, centro);
+                        }
+                        p{
+                            @extend %displayF;
+                            font-family: nth($fuentes, 2);
+                            font-size: 10px;
+                            color: nth($colores, 3);
+                            justify-content: map-get($lugar, around);
+                        }
+                        img{
+                            width: 300px;
+                            }
+                        .mouseind{
+                                width: 250px; 
+                            }
+                        .auri1, .auri2, .auri3, .auri4, .auri5, .auri6{
+                                width: 200px; 
+                            }
+                        .auri2, .auri5, .auri6{
+                                height: 250px;
+                            }
+                        .moni1, .moni2, .moni3, .moni4, .moni5, .moni6{
+                                width: 200px; 
+                            }
+                        .mouse1, .mouse2, .mouse3, .mouse4, .mouse5, .mouse6{
+                            width: 150px;
+                        }
+                    }
+                    
+                    .main-container2{
+                        display: none;
+                        @extend %displayF;
+                        justify-content: map-get($lugar, around);
+                        background-color: nth($colores, 2);
+                        margin: nth($pixeles, 1);
+                        h2{
+                            @extend %displayF;
+                            font-family: nth($fuentes, 2);
+                            color: nth($colores, 3);
+                            align-items: map-get($lugar, centro);
+                        }
+                    }
+
+                    // FOOTER
+
+                    footer{
+                        background-color: nth($colores, 1);
+                        border-top: 1px solid white;
+                        .map{
+                            @extend %displayF;
+                            margin: nth($pixeles, 2);
+                            align-items: map-get($lugar, centro);
+                        }
+                        .acompañante-map{
+                            display: none;
+                            @extend %displayF;
+                            justify-content: map-get($lugar, end);
+                            align-items: map-get($lugar, centro);
+                        }
+                        h2{
+                            @extend %displayF;
+                            text-align: center;
+                            margin-bottom: nth($pixeles, 1);
+                        }
+                        h6{
+                            @extend %displayF;
+                            justify-content: map-get($lugar, centro);
+                            margin-bottom: nth($pixeles, 1);
+                        }
+                        .contactos-container{
+                            padding-bottom: nth($pixeles, 2);
+                        }
+                        .contactos{
+                            @extend %displayF;
+                            justify-content: map-get($lugar, around);
+                            align-items: map-get($lugar, centro);
+                            .contactosRS{
+                                transition: all 2s;
+                            }
+                            .contactosRS:hover{
+                                display: none;
+                                @include escala;
+                            }
+                        }
+                    }
+                }
+            
+            //MEDIUM
+            @media screen and (min-width: 900px) and (max-width: 1200px){
+                // HEADER
+                    header{
+                        display: flex;
+                        background-color: nth($colores, 1);
+                        color: nth($colores, 3);
+                        justify-content: map-get($lugar, around);
+                        .icono{
+                            display: flex;
+                            justify-content: map-get($lugar, centro);
+                            height: 250px;
+                            width: 300px;
+                        }
+                        .bienvenida{
+                            display: none;
+                            display: flex;
+                            order: 3;
+                            align-items: map-get($lugar, centro);
+                        }
+                    }
+
+                // MAIN
+
+                    .lugar-tabla{
+                        background-color: nth($colores, 1);
+                        align-items: map-get($lugar, centro);
+                        color: nth($colores, 3);
+                        .tabla{
+                            display: flex;
+                            border-top: 1px solid rgb(255, 255, 255);
+                            padding: nth($pixeles, 3);
+                            justify-content: map-get($lugar, around);
+                            color: nth($colores, 3);
+                            a{
+                                text-decoration: none;
+                                color: nth($colores, 3);
+                                font-size: nth($pixeles, 2);
+                                font-family: nth($fuentes, 1);
+                                transition: all 1s;
+                            }
+                        }
+                    }
+                    .main-container{
+                        display: flex;
+                        justify-content: map-get($lugar, around);
+                        .main{
+                            display: grid;
+                            grid-template-areas: 
+                            'tv1'
+                            'tv2'
+                            'tv3'
+                            'tv4';
+                        }
+                        .maintv{
+                            display: grid;
+                            grid-template-areas: 
+                            'tv1'
+                            'tv2'
+                            'tv3' 
+                            'tv4'
+                            'tv5' 
+                            'tv6';
+                        }
+                        .tv1, .tv2, .tv3, .tv4, .tv5, .tv6{
+                            display: flex;
+                            justify-content: map-get($lugar, around);
+                            align-items: map-get($lugar, centro);
+                        }
+                        p{
+                            display: flex;
+                            font-family: nth($fuentes, 2);
+                            color: nth($colores, 3);
+                            justify-content: map-get($lugar, around);
+                        }
+                    }
+
+                    .main-container2{
+                        display: none;
+                        display: flex;
+                        justify-content: map-get($lugar, around);
+                        background-color: nth($colores, 2);
+                        margin: nth($pixeles, 1);
+                        h2{
+                            display: flex;
+                            font-family: nth($fuentes, 2);
+                            color: nth($colores, 3);
+                            align-items: map-get($lugar, centro);
+                        }
+                    }
+
+                // FOOTER
+                
+                    footer{
+                        background-color: nth($colores, 1);
+                        border-top: 1px solid white;
+                        .map{
+                            display: flex;
+                            margin: nth($pixeles, 2);
+                            align-items: map-get($lugar, centro);
+                        }
+                        .acompañante-map{
+                            display: none;
+                            display: flex;
+                            justify-content: map-get($lugar, end);
+                            align-items: map-get($lugar, centro);
+                        }
+                        h2{
+                            display: flex;
+                            text-align: center;
+                            margin-bottom: nth($pixeles, 1);
+                        }
+                        h6{
+                            display: flex;
+                            justify-content: map-get($lugar, centro);
+                            margin-bottom: nth($pixeles, 1);
+                        }
+                        .contactos-container{
+                            padding-bottom: nth($pixeles, 2);
+                        }
+                        .contactos{
+                            display: flex;
+                            justify-content: map-get($lugar, around);
+                            align-items: map-get($lugar, centro);
+                            .contactosRS{
+                                transition: all 2s;
+                            }
+                            .contactosRS:hover{
+                                display: none;
+                                @include escala;
+                            }
+                        }
+                    }
+                }

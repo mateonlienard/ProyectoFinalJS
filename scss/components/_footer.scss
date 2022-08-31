@@ -1,0 +1,43 @@
+@import '../base/listas';
+@import '../base/mixins';
+@import '../base/extend';
+@import '../base/maps';
+
+footer{
+    background-color: nth($colores, 1);
+    border-top: 1px solid white;
+    .map{
+        @extend %displayF;
+        margin: nth($pixeles, 2);
+        justify-content: map-get($lugar, around);
+    }
+    .acompañante-map{
+        @extend %displayF;
+        justify-content: map-get($lugar, end);
+        align-items: map-get($lugar, centro);
+    }
+    h2{
+        @extend %displayF;
+        justify-content: map-get($lugar, centro);
+        margin-bottom: nth($pixeles, 1);
+    }
+    h6{
+        @extend %displayF;
+        justify-content: map-get($lugar, centro);
+        margin-bottom: nth($pixeles, 1);
+    }
+    .contactos-container{
+        padding-bottom: nth($pixeles, 2);
+    }
+    .contactos{
+        @extend %displayF;
+        justify-content: map-get($lugar, around);
+        align-items: map-get($lugar, centro);
+        .contactosRS{
+            transition: all 2s;
+        }
+        .contactosRS:hover{
+            @include escala;
+        }
+    }
+}

@@ -1,0 +1,98 @@
+@import '../base/listas';
+@import '../base/mixins';
+@import '../base/extend';
+@import '../base/maps';
+
+.lugar-tabla{
+    background-color: nth($colores, 1);
+    align-items: map-get($lugar, centro);
+    color: nth($colores, 3);
+    .tabla{
+        @extend %displayF;
+        border-top: 1px solid rgb(255, 255, 255);
+        padding: nth($pixeles, 3);
+        justify-content: map-get($lugar, around);
+        color: nth($colores, 3);
+        a{
+            text-decoration: none;
+            color: nth($colores, 3);
+            font-size: nth($pixeles, 2);
+            font-family: nth($fuentes, 1);
+            transition: all 1s;
+        }
+        a:hover{
+            @include escala;
+        }
+    }
+}
+.main-container{
+    @extend %displayF;
+    justify-content: map-get($lugar, around);
+    .main{
+        @extend %displayG;
+        grid-template-areas: 
+        'tv1 tv2'
+        'tv3 tv4';
+    }
+    img{
+        width: 500px;
+    }
+    .auri1, .auri2, .auri3, .auri4, .auri5, .auri6{
+        width: 300px; 
+    }
+    .moni1, .moni2, .moni3, .moni4, .moni5, .moni6{
+        width: 400px; 
+    }
+    .maintv{
+        @extend %displayG;
+        grid-template-areas: 
+        'tv1 tv2'
+        'tv3 tv4'
+        'tv5 tv6';
+    }
+    .tv1, .tv2, .tv3, .tv4, .tv5, .tv6{
+        @extend %displayF;
+        justify-content: map-get($lugar, around);
+        align-items: map-get($lugar, centro);
+    }
+    p{
+        @extend %displayF;
+        font-family: nth($fuentes, 2);
+        color: nth($colores, 3);
+        justify-content: map-get($lugar, around);
+    }
+    h4{
+        @extend %displayF;
+        justify-content: map-get($lugar, centro)
+    }
+}
+
+.tabla{
+    --bs-table-color: var(--bs-body-color);
+    --bs-table-bg: transparent;
+    --bs-table-border-color: var(--bs-border-color);
+    --bs-table-accent-bg: transparent;
+    --bs-table-striped-color: var(--bs-body-color);
+    --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+    --bs-table-active-color: var(--bs-body-color);
+    --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+    --bs-table-hover-color: var(--bs-body-color);
+    --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+    width: 100%;
+    color: var(--bs-table-color);
+    vertical-align: top;
+    border-color: var(--bs-table-border-color);
+}
+
+.main-container2{
+    @extend %displayF;
+    justify-content: map-get($lugar, around);
+    background-color: nth($colores, 2);
+    margin: nth($pixeles, 1);
+    h2{
+        @extend %displayF;
+        font-family: nth($fuentes, 2);
+        color: nth($colores, 3);
+        align-items: map-get($lugar, centro);
+    }
+}
