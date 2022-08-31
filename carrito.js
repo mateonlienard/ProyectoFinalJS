@@ -20,16 +20,15 @@ function obtenerJsonLocal(){
     fetch(URLJSON)
         .then(resp=>resp.json())
         .then(data=>{
-            const productos=data.productos
+            const productos=data.productos.filter((producto)=>producto.categoria.includes('Mouses'))
             for(const producto of productos){
-                    lista.innerHTML+=`<li class='bg-dark col-sm-4 list-group-item'>
-                    <img src=${producto.img} style="width: 200px;" alt=''>
-                    <h3 class='text-center text-white'>${producto.titulo}</h3>
-                    <p><strong>Precio:$ ${producto.precio}</strong></p>
-                    <button id='btn${producto.id}' class='btn btn-primary'>Comprar</button>
-                    </li>`
-                ;
-            };
+                lista.innerHTML+=`<li class='bg-dark col-sm-4 list-group-item'>
+                <img src=${producto.img} style="width: 200px;" alt=''>
+                <h3 class='text-center text-white'>${producto.titulo}</h3>
+                <p><strong>Precio:$ ${producto.precio}</strong></p>
+                <button id='btn${producto.id}' class='btn btn-primary'>Comprar</button>
+                </li>`
+        };
             productos.forEach(producto=>{
                 document.getElementById(`btn${producto.id}`).addEventListener('click',function(){
                     agregarAlCarrito(producto)
