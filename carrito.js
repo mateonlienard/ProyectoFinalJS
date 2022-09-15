@@ -32,5 +32,6 @@ finalizar.onclick=()=>{
         text: 'Estamos preparando todo para el envio',
         imageAlt: 'ok',
       });
+      document.getElementById('tablabody').remove();
       localStorage.removeItem("carrito",JSON.stringify(carrito));
     };
