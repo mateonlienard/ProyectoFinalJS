@@ -8,7 +8,6 @@ function renderProductos(){
     obtenerJsonLocal();
 }
 
-
 function obtenerJsonLocal(){
     const URLJSON='productos.json'
     fetch(URLJSON)
