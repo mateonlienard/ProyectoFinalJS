@@ -86,6 +86,9 @@ footer .contactos, footer h6, footer h2, footer .acompañante-map, footer .map, 
 .main-container h4 {
   justify-content: center;
 }
+.main-container a {
+  text-decoration: none;
+}
 
 .tabla {
   --bs-table-color: var(--bs-body-color);

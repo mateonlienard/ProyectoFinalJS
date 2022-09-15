@@ -65,6 +65,9 @@
         @extend %displayF;
         justify-content: map-get($lugar, centro)
     }
+    a{
+        text-decoration: none;
+    }
 }
 
 .tabla{
