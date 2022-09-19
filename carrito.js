@@ -1,7 +1,23 @@
 const carrito=[];
 if(localStorage.getItem('carrito')){
-    carrito=JSON.parse(localStorage.getItem('carrito'));
-}
+    class Producto {
+        constructor(prod) {
+            this.id=prod.id
+            this.titulo=prod.titulo;
+            this.precio=parseFloat(prod.precio);
+        }};   
+    const carritoJSON=JSON.parse(localStorage.getItem('carrito'));
+    const carroJSON=[];
+    for (const prod of carritoJSON)
+    carroJSON.push(new Producto(prod));
+    for (const Producto of carroJSON) {
+        document.getElementById('tablabody').innerHTML+=`
+        <tr>
+                <td>${Producto.id}</td>
+                <td>${Producto.titulo}</td>
+                <td>${Producto.precio}</td>
+        </tr>
+    `;}}
 
 // Sumando productos al carro
 
