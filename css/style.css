@@ -63,7 +63,7 @@ footer .contactos, footer h6, footer h2, footer .acompañante-map, footer .map, 
   grid-template-areas: "tv1 tv2" "tv3 tv4";
 }
 .main-container img {
-  width: 400px;
+  width: 200px;
 }
 .main-container .auri1, .main-container .auri2, .main-container .auri3, .main-container .auri4, .main-container .auri5, .main-container .auri6 {
   width: 300px;
@@ -262,7 +262,6 @@ html {
   }
   header .icono {
     justify-content: center;
-    height: 250px;
     width: 300px;
   }
   header .bienvenida {
@@ -308,10 +307,8 @@ html {
     justify-content: space-around;
   }
   .main-container img {
-    width: 300px;
-  }
-  .main-container .mouseind {
-    width: 250px;
+    width: 150px;
+    padding: 10px;
   }
   .main-container .auri1, .main-container .auri2, .main-container .auri3, .main-container .auri4, .main-container .auri5, .main-container .auri6 {
     width: 200px;
@@ -382,7 +379,6 @@ html {
   header .icono {
     display: flex;
     justify-content: center;
-    height: 250px;
     width: 300px;
   }
   header .bienvenida {
@@ -438,7 +434,6 @@ html {
     display: flex;
     justify-content: space-around;
     background-color: rgb(45, 1, 86);
-    margin: 40px;
   }
   .main-container2 h2 {
     display: flex;

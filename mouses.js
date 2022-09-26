@@ -17,8 +17,8 @@ function obtenerJsonLocal(){
             const productos=data.productos.filter((producto)=>producto.categoria.includes('Mouses'))
             for(const producto of productos){
                 lista.innerHTML+=`<li class='bg-dark col-sm-4 list-group-item'>
-                <img src=${producto.img} style="width: 200px;" alt=''>
-                <h3 class='text-center text-white'>${producto.titulo}</h3>
+                <img src=${producto.img} style="width: 150px;" alt=''>
+                <h4 class='text-center text-white'>${producto.titulo}</h4>
                 <p><strong>Precio:$ ${producto.precio}</strong></p>
                 <button id='btn${producto.id}' class='btn btn-primary'>Comprar</button>
                 </li>`

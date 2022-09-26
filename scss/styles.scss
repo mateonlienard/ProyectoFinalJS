@@ -110,7 +110,6 @@ html{
                         .icono{
                             @extend %displayF;
                             justify-content: map-get($lugar, centro);
-                            height: 250px;
                             width: 300px;
                         }
                         .bienvenida{
@@ -176,10 +175,8 @@ html{
                             justify-content: map-get($lugar, around);
                         }
                         img{
-                            width: 300px;
-                            }
-                        .mouseind{
-                                width: 250px; 
+                            width: 150px;
+                            padding: 10px;
                             }
                         .auri1, .auri2, .auri3, .auri4, .auri5, .auri6{
                                 width: 200px; 
@@ -264,7 +261,6 @@ html{
                         .icono{
                             display: flex;
                             justify-content: map-get($lugar, centro);
-                            height: 250px;
                             width: 300px;
                         }
                         .bienvenida{
@@ -335,7 +331,6 @@ html{
                         display: flex;
                         justify-content: map-get($lugar, around);
                         background-color: nth($colores, 2);
-                        margin: nth($pixeles, 1);
                         h2{
                             display: flex;
                             font-family: nth($fuentes, 2);
